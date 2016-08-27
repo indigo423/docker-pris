@@ -13,6 +13,6 @@ VOLUME ["${OPENNMS_PRIS_HOME}/requisitions","${OPENNMS_PRIS_HOME}/scriptsteps" ]
 
 WORKDIR ${OPENNMS_PRIS_HOME}
 
-ENTRYPOINT [ "${OPENNMS_PRIS_HOME}/opennms-pris.sh" ]
+ENTRYPOINT ${OPENNMS_PRIS_HOME}/opennms-pris.sh
 
 EXPOSE 8000
