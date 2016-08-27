@@ -11,8 +11,8 @@ RUN cd /tmp && curl -L ${OPENNMS_PRIS_URL} | tar xz && \
 ## Volumes for storing data outside of the container
 VOLUME ["${OPENNMS_PRIS_HOME}/requisitions","${OPENNMS_PRIS_HOME}/scriptsteps" ]
 
-WORKDIR /opt/opennms-pris
+WORKDIR ${OPENNMS_PRIS_HOME}
 
-ENTRYPOINT [ "/opt/opennms-pris/opennms-pris.sh" ]
+ENTRYPOINT [ "${OPENNMS_PRIS_HOME}/opennms-pris.sh" ]
 
 EXPOSE 8000
