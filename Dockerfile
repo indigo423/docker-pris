@@ -1,7 +1,7 @@
 FROM indigo/centos-jdk8:8u102
 MAINTAINER Ronny Trommer <ronny@opennms.org>
 
-ENV OPENNMS_PRIS_VERSION 1.1.4
+ENV OPENNMS_PRIS_VERSION 1.1.5
 ENV OPENNMS_PRIS_HOME /opt/opennms-pris
 ENV OPENNMS_PRIS_URL https://github.com/OpenNMS/opennms-provisioning-integration-server/releases/download/${OPENNMS_PRIS_VERSION}/opennms-pris-dist-${OPENNMS_PRIS_VERSION}-release-archive.tar.gz
 
